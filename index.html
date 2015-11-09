@@ -1,35 +1,69 @@
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<!DOCTYPE html>
+<html lang="en-us">
 
-  ga('create', 'UA-91911-13', 'auto');
-  ga('send', 'pageview');
+<head>
+	<meta charset="UTF-8">
+	<title>Hashkat</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="hashkat.css" media="screen">
+	<link rel="icon" type="image/png" href="images/hkat_3.png" alt="cat" />
+</head>
 
-</script>
+<body>
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-<center><h1>#k@</h1>
-<h1>(hashKAT)</h1>
-<img src="images/hashKAT.png">
-</center>
+		ga('create', 'UA-91911-13', 'auto');
+		ga('send', 'pageview');
 
-<p>#k@ is a dynamical network simulation tool designed to model the growth of and information propagation within an online social network. It is an agent-based, kinetic Monte Carlo engine capable of simulating online networks such as Facebook, Twitter, LinkedIn, etc. 
+	</script>
 
-<p>#k@ incorporates all elements of online social networks including multiple user profiles (e.g. standard users, organizations, celebrities, and bots), user messaging, trending topics, and advertising. Agents within the network make decisions (e.g. follow, unfollow, broadcast, and rebroadcast) based on a variety of user defined factors including geography, political affiliation, musical interests, and humour.
+	<center>
+		<div>
+			<H1>Hashkat</H1>
+		</div>
+		<div><img src="images/logo.svg" height="50" width="200" /></div>
+		<br />
+		<div><img src="images/hashKAT.png" /></div>
+	</center>
+	<br />
 
-<p>#k@ allows for simulation of a realistic online social network, enabling users to test hypotheses for growth mechanisms and scenarios for information propagation. As it solves the forward problem, #k@ can be used with Big Data analytics tools to test data collection protocols and ensure inverse model validity. 
 
-<p>
-<center>
-<a href="http://simulator.science.uoit.ca/hashkat.2015.08.20.tar.gz">Latest build</a><br>
-<a href="http://docs.hashkat.org">Documentation (still under development)</a><br>
-(P.S. Our C++ is better than our HTML :)
-</center>
-<br>
-Email: isaac.tamblyn@uoit.ca<br>
-Web: <a href="http://faculty.uoit.ca/itamblyn">http://faculty.uoit.ca/itamblyn</a>
+	<p>#k@ is a dynamic network simulation tool designed to model the growth of and information propagation through an online social network. It is an agent-based, kinetic Monte Carlo engine capable of simulating online networks such as Facebook, Twitter, LinkedIn, etc.</p>
 
-<center>#k@ was developed by K. Ryczko, A. Domurad, and I. Tamblyn</a>
+	<p>#k@ incorporates all elements of online social networks including multiple user profiles (e.g. standard users, organizations, celebrities, and bots), user messaging, trending topics, and advertising. Agents within the network make decisions (e.g. follow, unfollow, broadcast, and rebroadcast) based on a variety of user defined constraints on signal propogation to model language, region, ideology, musical interests, and humour.</p>
 
-(hosted on github.com)
+	<p>#k@ allows for simulation of a realistic online social network, enabling users to test hypotheses for growth mechanisms and scenarios for information propagation. As it solves the forward problem, #k@ can be used with Big Data analytics tools to test data collection protocols and ensure inverse model validity.</p>
+
+	<center>
+		<a href="http://simulator.science.uoit.ca/hashkat.2015.08.20.tar.gz">Latest build</a>
+		<br />
+		<a href="http://docs.hashkat.org">Documentation</a>
+		<br />
+	</center>
+	<br />
+	<p>Email: isaac.tamblyn@uoit.ca
+		<br /> Web: <a href="http://faculty.uoit.ca/itamblyn">http://faculty.uoit.ca/itamblyn</a></p>
+	<br />
+
+	<center>
+		<p>#k@ was developed by K. Ryczko, A. Domurad, and I. Tamblyn (hosted on github.com)</p>
+	</center>
+
+</body>
+
+</html>
