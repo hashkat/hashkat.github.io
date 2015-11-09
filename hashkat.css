@@ -1,8 +1,19 @@
-p,
-a {
-	font: 16px arial, sans-serif;
+body {
+	font-size: 90%;
+}
+body,
+p {
+	font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+	font-weight: normal;
+	color: #404040;
+	min-height: 100%;
+	overflow-x: hidden;
+}
+body {
+	margin: 0;
 }
 H1 {
-	font: bold 50px arial, sans-serif;
-	color: dodgerblue;
+	font: bold 60px;
+	font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+	color: #0099CC;
 }
