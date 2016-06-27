@@ -1,79 +1,194 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+<html lang="en">
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>#k@ : Hashkat</title>
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:600' rel='stylesheet' type='text/css'>
+    <!-- font awesome -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <!-- animate.css -->
+    <link rel="stylesheet" href="assets/animate/animate.css" />
+    <link rel="stylesheet" href="assets/animate/set.css" />
+    <!-- gallery -->
+    <link rel="stylesheet" href="assets/gallery/blueimp-gallery.min.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
 
-    <title>#k@  by hashkat</title>
-  </head>
-
-  <body>
-
-    <header>
-      <div class="container">
-        <h1>#k@ </h1>
-        <h2>Hashkat : Kinetic Analysis of Twitter-like networks</h2>
-
-        <section id="downloads">
-          <a href="https://github.com/hashkat" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
-
-    <div class="container">
-      <section id="main_content">
-        <p><img src="https://github.com/hashkat/hashkat.github.io/blob/master/images/hashKAT.jpg" alt="Hashkat"></p>
-
-<h3>
-<a id="description" class="anchor" href="#description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Description</h3>
-
-<p><code>#k@</code> is a dynamic network simulation tool designed to model the growth of and information propagation through an online social network. It is an agent-based, Kinetic Monte Carlo engine capable of simulating online networks such as Facebook, Twitter, LinkedIn, etc.</p>
-
-<p><code>#k@</code> incorporates all elements of online social networks including multiple user profiles (e.g. standard users, organizations, celebrities, and bots), user messaging, trending topics, and advertising. Agents within the network make decisions (e.g. follow, unfollow, broadcast, and rebroadcast) based on a variety of user defined constraints on signal propagation to model language, region, ideology, musical interests, and humour.</p>
-
-<p><code>#k@</code> allows for simulation of a realistic online social network, enabling users to test hypotheses for growth mechanisms and scenarios for information propagation. As it solves the forward problem, <code>#k@</code> can be used with Big Data analytics tools to test data collection protocols and ensure inverse model validity.</p>
-
-<p><code>#k@</code> is a fully cross-platform tool: it works natively on <code>Windows 10</code>, <code>OS X</code>, and <code>Linux</code> platforms.</p>
-
-<p><a href="https://github.com/hashkat/hashkat/archive/master.zip">Download the latest version of Hashkat</a></p>
-
-<hr>
-
-<p><strong>Email:</strong> <a href="mailto:isaac.tamblyn@uoit.ca">isaac.tamblyn@uoit.ca</a> <br>
-<strong>Web:</strong> <a href="http://faculty.uoit.ca/itamblyn">http://faculty.uoit.ca/itamblyn</a></p>
-
-<hr>
-
-<p><code>#k@</code> was developed by K. Ryczko, A. Domurad, and I. Tamblyn (hosted on github.com)</p>
-
-<hr>
-
-<h3>
-<a id="documentation" class="anchor" href="#documentation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Documentation</h3>
-
-<p><code>#k@</code> has built-in documentation web pages. Find detailed information, instructions and tutorials at <a href="http://docs.hashkat.org/en/latest/">docs.hashkat.org</a>
-<br>Documentation Status: <a href="https://readthedocs.org/projects/hashkat/?badge=latest"><img src="https://readthedocs.org/projects/hashkat/badge/?version=latest" alt="Documentation Status"></a>
-<br>Check out the <a href="https://github.com/hashkat/hashkat/tree/master/docs"><code>hashkat/docs</code></a> directory for the source code of the documentation.</p>
-
-<hr>
-
-<h3>
-<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>LICENSE</h3>
-
-<p><code>#K@</code> is a free software: you can redistribute it and/or modify it under the terms of the <code>GNU General Public License</code> as published by the <code>Free Software Foundation</code>, either version 3 of the License, or (at your option) any later version.</p>
-
-<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the <code>GNU General Public License</code> for more details.</p>
-
-<p>You should have received a copy of the <a href="https://github.com/hashkat/hashkat/blob/master/LICENSE">GNU General Public License v3</a> along with this program. If not, see <a href="http://www.gnu.org/licenses/">gnu.org/licenses</a>.</p>
-
-<p><img src="https://www.gnu.org/graphics/gplv3-88x31.png" alt="GNU GPL"></p>
-      </section>
+<body>
+    <div class="topbar animated fadeInLeftBig">
     </div>
+    <div class="navbar-wrapper">
+        <div class="container">
+            <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="top-nav">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#home"><img src="images/logo.svg" alt="logo" height=50></a>
+                    </div>
+                    <div class="navbar-collapse  collapse">
+                        <ul class="nav navbar-nav navbar-right scroll">
+                            <li class="active"><a href="#home">Home</a></li>
+                            <li><a href="#menu">Description</a></li>
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="#footer">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="home">
+        <div class="banner">
+            <img src="images/back.jpg" alt="banner" class="img-responsive">
+            <div class="caption">
+                <div class="caption-wrapper">
+                    <div class="caption-info">
+                        <i class="fa fa-coffee fa-5x animated bounceInDown"></i>
+                        <h1 class="animated bounceInUp">Hashkat</h1>
+                        <br>
+                        <br>
+                        <p class="animated bounceInLeft">Kinetic Analysis of Twitter-like Networks</p>
+                        <a href="#menu" class="explore animated bounceInDown"><i class="fa fa-angle-down  fa-3x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="menu" class="container spacer about">
+        <h2 class="text-center wowload fadeInUp">Description</h2>
+        <div class="row">
+            <div class="col-sm-12 wowload fadeInLeft">
+                <p><code>HASHKAT</code> is a dynamic network simulation tool designed to model the growth of and information propagation through an online social network. It is an agent-based, Kinetic Monte Carlo engine capable of simulating online networks such as Facebook, Twitter, LinkedIn, etc.</p>
+                <p><code>HASHKAT</code> incorporates all elements of online social networks including multiple user profiles (e.g. standard users, organizations, celebrities, and bots), user messaging, trending topics, and advertising. Agents within the network make decisions (e.g. follow, unfollow, broadcast, and rebroadcast) based on a variety of user defined constraints on signal propagation to model language, region, ideology, musical interests, and humour.</p>
+                <p><code>HASHKAT</code> allows for simulation of a realistic online social network, enabling users to test hypotheses for growth mechanisms and scenarios for information propagation. As it solves the forward problem, <code>HASHKAT</code> can be used with Big Data analytics tools to test data collection protocols and ensure inverse model validity.</p>
+                <p><code>HASHKAT</code> is a fully cross-platform tool: it works natively on <code>Windows 10</code>, <code>OS X</code>, and <code>Linux</code> platforms.</p>
+                <p><a href="https://github.com/hashkat/hashkat/archive/master.zip">Download the latest version of Hashkat</a></p>
+                <p><code>HASHKAT</code> is proudly hosted on <a href="https://github.com/hashkat/hashkat">github</a>.</p>
+                <p><code>HASHKAT</code> has built-in documentation web pages. Find detailed information, instructions and tutorials at <a href="http://docs.hashkat.org/en/latest/">docs.hashkat.org</a>
+                    <br>Check out the <a href="https://github.com/hashkat/hashkat/tree/master/docs"><code>hashkat/docs</code></a> directory for the source code of the documentation.</p>
+            </div>
+        </div>
+    </div>
+    <div id="imgs" class=" clearfix grid">
+        <figure class="effect-oscar  wowload fadeInUp">
+            <img src="images/portfolio/network.jpg" width=2500 height=400/>
+            <figcaption>
+                <h2>Agent Based Modelling</h2>
+                <p>A model for simulating the actions and interactions of autonomous agents (both individual or collective entities such as organizations or groups) with a view to assessing their effects on the system as a whole.</p>
+            </figcaption>
+        </figure>
+        <figure class="effect-oscar  wowload fadeInUp">
+            <img src="images/portfolio/comp.jpg" width=2500 height=400/>
+            <figcaption>
+                <h2>Monte Carlo Engine</h2>
+                <p>A Kinetic Monte Carlo method computer simulation intended to simulate the time evolution of some processes occurring in nature, typically with known transition rates among states</p>
+            </figcaption>
+        </figure>
+        <figure class="effect-oscar  wowload fadeInUp">
+            <img src="images/portfolio/socialmedia.jpg" width=2500 height=400/>
+            <figcaption>
+                <h2>Social Networks</h2>
+                <p>Testing hypotheses for growth mechanisms and scenarios for information propagation in realistic social networks like Facebook, Twitter, LinkedIn etc.</p>
+            </figcaption>
+        </figure>
+    </div>
+    <div id="team" class="container spacer ">
+        <h2 class="text-center  wowload fadeInUp">Our Team</h2>
+        <p class="text-center  wowload fadeInLeft">They have made everything possible !</p>
+        <div class="row grid team  wowload fadeInUpBig">
+            <div class=" col-sm-4 col-xs-6">
+                <figure class="effect-chico">
+                    <img src="images/team/it.jpg" class="img-responsive" />
+                    <figcaption>
+                        <p><b>Isaac Tamblyn</b>
+                            <br>The Janitor</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class=" col-sm-4 col-xs-6">
+                <figure class="effect-chico">
+                    <img src="images/team/kr.png" class="img-responsive" />
+                    <figcaption>
+                        <p><b>Kevin Ryczko</b>
+                            <br>{ ... }</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class=" col-sm-4 col-xs-6">
+                <figure class="effect-chico">
+                    <img src="images/team/ad.jpg" class="img-responsive" />
+                    <figcaption>
+                        <p><b>Adam Domurad</b>
+                            <br>{ .. }</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class=" col-sm-12 col-xs-6">
+                <br>
+                <br>
+            </div>
+            <div class=" col-sm-4 col-xs-6">
+                <figure class="effect-chico">
+                    <img src="images/team/lk.png" class="img-responsive" />
+                    <figcaption>
+                        <p><b>Linda Kettle</b>
+                            <br>{ .. }
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class=" col-sm-4 col-xs-6">
+                <figure class="effect-chico">
+                    <img src="images/team/nb.png" class="img-responsive" />
+                    <figcaption>
+                        <p><b>Nick Buhagiar </b>
+                            <br>{ .. }</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class=" col-sm-4 col-xs-6">
+                <figure class="effect-chico">
+                    <img src="images/team/ad.jpg" class="img-responsive" />
+                    <figcaption>
+                        <p><b>Adam Domurad</b>
+                            <br>{ .. }</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="footer text-center spacer">
+        <p class="wowload flipInX">
+            <p><strong>Email:</strong> <a href="mailto:isaac.tamblyn@nrc.ca">isaac.tamblyn@nrc.ca</a>
+                <br>
+                <strong>Web:</strong> <a href="http://clean.energyscience.ca/">http://clean.energyscience.ca/</a></p>
+            <b>#K@</b> is a free software: you can redistribute it and/or modify it under the terms of the <b>GNU General Public License</b> as published by the <b>Free Software Foundation</b>.
+    </div>
+    <a href="#home" class="gototop "><i class="fa fa-angle-up  fa-3x"></i></a>
+    <!-- jquery -->
+    <script src="assets/jquery.js"></script>
+    <!-- wow script -->
+    <script src="assets/wow/wow.min.js"></script>
+    <!-- boostrap -->
+    <script src="assets/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+    <!-- jquery mobile -->
+    <script src="assets/mobile/touchSwipe.min.js"></script>
+    <script src="assets/respond/respond.js"></script>
+    <!-- gallery -->
+    <script src="assets/gallery/jquery.blueimp-gallery.min.js"></script>
+    <script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script>
+    <!-- custom script -->
+    <script src="assets/script.js"></script>
+</body>
 
-    
-  </body>
 </html>
