@@ -1,0 +1,36 @@
+<br>
+<div class="form-group" ng-app="">
+    <label>Companies follow many people, but don’t interact much other than publishing content. Do you wish to have celebrities in your sample Twitter simulation using Hashkat ?</label>
+    <ul>
+        <li>
+            <input id="option1" type="radio" value="Yes" ng-model="formData.companyAgents">
+            <label for="option1"> Yes. I want companies' presence in my network ! </label>
+            <div class="check"></div>
+        </li>
+        <li>
+            <input id="option2" type="radio" value="No" ng-model="formData.companyAgents">
+            <label for="option2"> No. I do not want any company in my network. </label>
+            <div class="check"></div>
+        </li>
+    </ul>
+</div>
+
+<div class="col-sm-12" ng-show="formData.companyAgents != null">
+    <br>
+    <br>
+    <img class="col-sm-2" src="assets/cat_profile.png">
+    <code ng-show="formData.companyAgents == 'Yes'"> Okay, your network has companies as desired.</code>
+    <code ng-show="formData.companyAgents == 'No'"> Okay, there are no companies in your network .</code>
+    <br><code>Moving on..</code>
+    <br>
+    <br>
+</div>
+
+<div class="form-group row" ng-show="formData.companyAgents != null">
+    <div class="col-xs-6 col-xs-offset-3">
+        <a ui-sref="form.ques-politicalAgents" class="btn btn-block btn-info">
+        Next Section 
+        <span class="glyphicon glyphicon-circle-arrow-right"></span>
+        </a>
+    </div>
+</div>

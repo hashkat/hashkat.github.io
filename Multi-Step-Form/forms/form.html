@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col-sm-9 col-sm-offset-1">
+        <div id="form-container">
+            <div class="page-header text-center">
+                <h2>HASHKAT: Kinetic Analysis of Twitter-like Networks</h2>
+                <br>
+                <!-- the links to our nested states using relative paths -->
+                <!-- add the active class if the state matches our ui-sref -->
+                <div id="status-buttons" class="text-center">
+                    <a ui-sref-active="active" ui-sref=".profile"><span>1</span>Profile</a>
+                    <a ui-sref-active="active"><span>2</span>Maximum Time</a>
+                    <a ui-sref-active="active"><span>3</span>Size of Network</a>
+                    <a ui-sref-active="active"><span>4</span>Region of Agents</a>
+                    <a ui-sref-active="active"><span>5</span>Language of Agents</a>             
+                    <a ui-sref-active="active"><span>6</span>Tastes of Agents</a>
+                    <a ui-sref-active="active"><span>7</span>Celebrity Agents</a>
+                    <a ui-sref-active="active"><span>8</span>Company Agents</a>
+                    <a ui-sref-active="active"><span>9</span>Political Agents</a>
+                    <a ui-sref-active="active"><span>10</span>Humorous Agents</a>
+                    <a ui-sref-active="active"><span>11</span>Government Agents</a>
+                    <a ui-sref-active="active"><span>12</span>Bot Agents</a>
+                    <a ui-sref-active="active" ui-sref=".lastQues"><span>13</span>Submit</a>
+                </div>
+            </div>
+            <!-- use ng-submit to catch the form submission and use our Angular function -->
+            <form id="signup-form" ng-submit="processForm()">
+                <!-- our nested state views will be injected here -->
+                <div id="form-views" ui-view></div>
+            </form>
+        </div>
+        <!-- show our formData as it is being typed -->
+       <!--  <pre>
+            {{ formData }}
+        </pre> -->
+    </div>
+</div>

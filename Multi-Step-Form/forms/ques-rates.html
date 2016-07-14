@@ -1,0 +1,64 @@
+<br>
+<label>Select the 'add' rate at which new agents will be added per minute during the simulation. </label>
+<br>
+
+<div class="form-group" ng-app="">
+    <ul>
+        <li>
+            <input id="option1" type="radio" value="Constant" ng-model="formData.addRate">
+            <label for="option1"> Constant </label>
+            <div class="check"></div>
+        </li>
+        <li>
+            <input id="option2" type="radio" value="Linear" ng-model="formData.addRate">
+            <label for="option2"> Linear </label>
+            <div class="check"></div>
+        </li>
+    </ul>
+
+    <div ng-show="formData.addRate == 'Constant'">
+        <br>
+        <label><i>Select the number of agents you wish to add per simulated minute , that is the 'value' of the constant function.</i></label>
+        <ul>
+            <li>
+                <input id="option3" type="radio" value="0.0" ng-model="formData.constantAddRateValue">
+                <label for="option3"> 0.0 </label>
+                <div class="check"></div>
+            </li>
+            <li>
+                <input id="option4" type="radio" value="1.0" ng-model="formData.constantAddRateValue">
+                <label for="option4"> 1.0 </label>
+                <div class="check"></div>
+            </li>
+        </ul>
+    </div>
+
+    <div ng-show="formData.addRate == 'Linear'">
+        <br>
+        <label><i>For a linear 'add' function, the slope and y-intercept must be specified. The classic linear function is y = ax + b, where 'a' is the slope, 'x' the variable, and 'b' the y-intercept.
+
+In #k@, the 'y_intercept' is the initial rate at which agents are added (the 'value' of the constant function above). The 'slope' is the rate at which the 'add' rate increases over time, where time ('x') is in simulated months.</i> </label>
+        <ul>
+            <li>
+                <input id="option5" type="radio" value="Slope 0.0" ng-model="formData.linearAddRateValue">
+                <label for="option5"> Slope 0.0 </label>
+                <div class="check"></div>
+            </li>
+            <li>
+                <input id="option6" type="radio" value="Slope 1.0" ng-model="formData.linearAddRateValue">
+                <label for="option6"> Slope 1.0 </label>
+                <div class="check"></div>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="form-group row">
+    <div class="col-xs-6 col-xs-offset-3">
+        <a ui-sref="form.lastQues" class="btn btn-block btn-info">
+        Next Section 
+        <span class="glyphicon glyphicon-circle-arrow-right"></span>
+        </a>
+    </div>
+</div>

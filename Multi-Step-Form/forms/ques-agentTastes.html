@@ -1,0 +1,43 @@
+<br>
+<div class="form-group" ng-app="">
+    <label>Do the agents in your sample Twitter simulation using Hashkat have similar tastes in politics, humour etc. ?</label>
+    <ul>
+        <li>
+            <input id="option1" type="radio" value="Yes" ng-model="formData.agentTastes">
+            <label for="option1"> Yes. They all like music, humour, and similar politics </label>
+            <div class="check"></div>
+        </li>
+        <li>
+            <input id="option2" type="radio" value="No1" ng-model="formData.agentTastes">
+            <label for="option2"> No. They have differing political views. </label>
+            <div class="check"></div>
+        </li>
+  
+        <li>
+            <input id="option3" type="radio" value="No2" ng-model="formData.agentTastes">
+            <label for="option3"> No. They have differing political views and tastes. </label>
+            <div class="check"></div>
+        </li>
+    </ul>
+</div>
+
+<div class="col-sm-12" ng-show="formData.agentTastes != null">
+    <br>
+    <br>
+    <img class="col-sm-2" src="assets/cat_profile.png">
+    <code ng-show="formData.agentTastes == 'Yes'"> Noted, all your agents have same tastes in music, politics etc.</code>
+    <code ng-show="formData.agentTastes == 'No1'"> Noted, all your agents have different poltical views.</code>
+    <code ng-show="formData.agentTastes == 'No2'"> Noted, all your agents have different poltical views and tastes in music, humour etc.</code>
+    <br><code>Next..</code>
+    <br>
+    <br>
+</div>
+
+<div class="form-group row" ng-show="formData.agentTastes != null">
+    <div class="col-xs-6 col-xs-offset-3">
+        <a ui-sref="form.ques-celebrityAgents" class="btn btn-block btn-info">
+        Next Section 
+        <span class="glyphicon glyphicon-circle-arrow-right"></span>
+        </a>
+    </div>
+</div>

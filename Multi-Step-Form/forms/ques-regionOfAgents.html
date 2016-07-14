@@ -1,0 +1,36 @@
+<br>
+<div class="form-group" ng-app="">
+    <label>Do the agents in your sample Twitter simulation using Hashkat live in the same region ?</label>
+    <ul>
+        <li>
+            <input id="option1" type="radio" value="Yes" ng-model="formData.sameAgentRegion">
+            <label for="option1"> Yes, All live in the same region </label>
+            <div class="check"></div>
+        </li>
+        <li>
+            <input id="option2" type="radio" value="No" ng-model="formData.sameAgentRegion">
+            <label for="option2"> No, All live in different regions </label>
+            <div class="check"></div>
+        </li>
+    </ul>
+</div>
+
+<div class="col-sm-12" ng-show="formData.sameAgentRegion != null">
+    <br>
+    <br>
+    <img class="col-sm-2" src="assets/cat_profile.png">
+    <code ng-show="formData.sameAgentRegion == 'Yes'"> Cool, All your agents live in the same region</code>
+    <code ng-show="formData.sameAgentRegion == 'No'"> Cool, All your agents live in different regions</code>
+    <br><code>Carry on !</code>
+    <br>
+    <br>
+</div>
+
+<div class="form-group row" ng-show="formData.sameAgentRegion != null">
+    <div class="col-xs-6 col-xs-offset-3">
+        <a ui-sref="form.ques-languageOfAgents" class="btn btn-block btn-info">
+        Next Section 
+        <span class="glyphicon glyphicon-circle-arrow-right"></span>
+        </a>
+    </div>
+</div>

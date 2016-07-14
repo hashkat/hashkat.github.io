@@ -1,0 +1,36 @@
+<br>
+<div class="form-group" ng-app="">
+    <label>Bots publish (possibly) useful information in their feed, but do not follow or interact with other users. Do you wish to have bots in your sample Twitter simulation using Hashkat ?</label>
+    <ul>
+        <li>
+            <input id="option1" type="radio" value="Yes" ng-model="formData.botAgents">
+            <label for="option1"> Yes. </label>
+            <div class="check"></div>
+        </li>
+        <li>
+            <input id="option2" type="radio" value="No" ng-model="formData.botAgents">
+            <label for="option2"> No. </label>
+            <div class="check"></div>
+        </li>
+    </ul>
+</div>
+
+<div class="col-sm-12" ng-show="formData.botAgents != null">
+    <br>
+    <br>        
+    <img class="col-sm-2" src="assets/cat_profile.png">
+    <code ng-show="formData.botAgents == 'Yes'"> Bots loaded...</code>
+    <code ng-show="formData.botAgents == 'No'"> No bots in your network.</code>
+    <br><code>Next...</code>
+    <br>
+    <br>
+</div>
+
+<div class="form-group row" ng-show="formData.botAgents != null">
+    <div class="col-xs-6 col-xs-offset-3">
+        <a ui-sref="form.formSubmission" class="btn btn-block btn-info">
+        Next Section 
+        <span class="glyphicon glyphicon-circle-arrow-right"></span>
+        </a>
+    </div>
+</div>

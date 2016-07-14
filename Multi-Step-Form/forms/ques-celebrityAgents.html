@@ -1,0 +1,36 @@
+<br>
+<div class="form-group" ng-app="">
+    <label>Celebrities possess great presence in the social network due to being well-known. In your sample Twitter simulation using Hashkat, they will gain many followers and their tweets will be rebroadcast widely. Do you wish to have celebrities in your network?</label>
+    <ul>
+        <li>
+            <input id="option1" type="radio" value="Yes" ng-model="formData.celebrityAgents">
+            <label for="option1"> Yes. I want celebs in my network ! </label>
+            <div class="check"></div>
+        </li>
+        <li>
+            <input id="option2" type="radio" value="No" ng-model="formData.celebrityAgents">
+            <label for="option2"> No. I am all good without any celebrity.. </label>
+            <div class="check"></div>
+        </li>
+    </ul>
+</div>
+
+<div class="col-sm-12" ng-show="formData.celebrityAgents != null">
+    <br>
+    <br>
+    <img class="col-sm-2" src="assets/cat_profile.png">
+    <code ng-show="formData.celebrityAgents == 'Yes'"> Awesome, you now have well-known celebrities in your social network !</code>
+    <code ng-show="formData.celebrityAgents == 'No'"> Noted, all your agents are standard .</code>
+    <br><code>Moving on..</code>
+    <br>
+    <br>
+</div>
+
+<div class="form-group row" ng-show="formData.celebrityAgents != null">
+    <div class="col-xs-6 col-xs-offset-3">
+        <a ui-sref="form.ques-companyAgents" class="btn btn-block btn-info">
+        Next Section 
+        <span class="glyphicon glyphicon-circle-arrow-right"></span>
+        </a>
+    </div>
+</div>

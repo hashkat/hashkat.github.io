@@ -1,0 +1,36 @@
+<br>
+<div class="form-group" ng-app="">
+    <label>Do you wish to have some users that publish almost exclusively political tweets in your sample Twitter simulation using Hashkat ?</label>
+    <ul>
+        <li>
+            <input id="option1" type="radio" value="Yes" ng-model="formData.politicalAgents">
+            <label for="option1"> Yes. </label>
+            <div class="check"></div>
+        </li>
+        <li>
+            <input id="option2" type="radio" value="No" ng-model="formData.politicalAgents">
+            <label for="option2"> No. </label>
+            <div class="check"></div>
+        </li>
+    </ul>
+</div>
+
+<div class="col-sm-12" ng-show="formData.politicalAgents != null">
+    <br>
+    <br>        
+    <img class="col-sm-2" src="assets/cat_profile.png">
+    <code ng-show="formData.politicalAgents == 'Yes'"> Okay, your network  will have some users that publish almost exclusively political tweets.</code>
+    <code ng-show="formData.politicalAgents == 'No'"> Okay, there are no users that publish almost exclusively political tweets.</code>
+    <br><code>Keep going !</code>
+    <br>
+    <br>
+</div>
+
+<div class="form-group row" ng-show="formData.politicalAgents != null">
+    <div class="col-xs-6 col-xs-offset-3">
+        <a ui-sref="form.ques-humorousAgents" class="btn btn-block btn-info">
+        Next Section 
+        <span class="glyphicon glyphicon-circle-arrow-right"></span>
+        </a>
+    </div>
+</div>

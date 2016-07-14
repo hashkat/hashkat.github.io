@@ -1,0 +1,48 @@
+<br>
+<label>How long are you able to wait for your sample Twitter simulation using Hashkat to finish?</label>
+<label>You can press <i>ctrl-c</i> to end the simulation at any time.</label>
+<div class="form-group" ng-app="">
+    <ul>
+        <li>
+            <input id="option1" type="radio" value="10 minutes" ng-model="formData.maxTime">
+            <label for="option1"> 10 minutes</label>
+            <div class="check"></div>
+        </li>
+        <li>
+            <input id="option2" type="radio" value="30 minutes" ng-model="formData.maxTime">
+            <label for="option2"> 30 minutes</label>
+            <div class="check"></div>
+        </li>
+        <li>
+            <input id="option3" type="radio" value="60 minutes" ng-model="formData.maxTime">
+            <label for="option3"> 60 minutes</label>
+            <div class="check"></div>
+        </li>
+        <li>
+            <input id="option4" type="radio" value="Unlimited time" ng-model="formData.maxTime">
+            <label for="option4"> Unlimited (you must press ctrl-c to end the simulation)
+ </label>
+            <div class="check"></div>
+        </li>
+    </ul>
+</div>
+
+<div class="col-sm-12" ng-show="formData.maxTime == '10 minutes'  || formData.maxTime == '30 minutes' || formData.maxTime == '60 minutes' || formData.maxTime == 'Unlimited time' " >
+        <br>
+        <br>
+        <img class="col-sm-2" src="assets/cat_profile.png">
+        <code> Great ! Your simulation would run for {{formData.maxTime}} !
+            <br>Let's move to the next section ?
+        </code>
+        <br>
+        <br>
+    </div>
+
+<div class="form-group row" ng-show = "formData.maxTime != null">
+    <div class="col-xs-6 col-xs-offset-3">
+        <a ui-sref="form.ques-sizeOfNetwork" class="btn btn-block btn-info">
+        Next Section 
+        <span class="glyphicon glyphicon-circle-arrow-right"></span>
+        </a>
+    </div>
+</div>

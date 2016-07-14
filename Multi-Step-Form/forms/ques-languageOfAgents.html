@@ -1,0 +1,36 @@
+<br>
+<div class="form-group" ng-app="">
+    <label>Do all the agents in your sample Twitter simulation using Hashkat speak the same language ?</label>
+    <ul>
+        <li>
+            <input id="option1" type="radio" value="Yes" ng-model="formData.sameAgentLanguage">
+            <label for="option1"> Yes, All speak the same language </label>
+            <div class="check"></div>
+        </li>
+        <li>
+            <input id="option2" type="radio" value="No" ng-model="formData.sameAgentLanguage">
+            <label for="option2"> No, All speak different languages </label>
+            <div class="check"></div>
+        </li>
+    </ul>
+</div>
+
+<div class="col-sm-12" ng-show="formData.sameAgentLanguage != null">
+    <br>
+    <br>
+    <img class="col-sm-2" src="assets/cat_profile.png">
+    <code ng-show="formData.sameAgentLanguage == 'Yes'"> Ok, all agents in your network speak the same language.</code>
+    <code ng-show="formData.sameAgentLanguage == 'No'"> Ok, all agents in your network speak different languages.</code>
+    <br><code>Carry on !</code>
+    <br>
+    <br>
+</div>
+
+<div class="form-group row" ng-show="formData.sameAgentLanguage != null">
+    <div class="col-xs-6 col-xs-offset-3">
+        <a ui-sref="form.ques-agentTastes" class="btn btn-block btn-info">
+        Next Section 
+        <span class="glyphicon glyphicon-circle-arrow-right"></span>
+        </a>
+    </div>
+</div>

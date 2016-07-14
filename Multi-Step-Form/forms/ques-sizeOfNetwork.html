@@ -1,0 +1,48 @@
+<br>
+<div class="form-group" ng-app="">
+    <label>What is the desired of size of the network you would like in your sample Twitter simulation using Hashkat ?</label>
+    <br>
+    <label><i> This is related to the maximum number of users that are permitted in the simulation. Once this number is reached, the number of agents in the network will no longer increase. </i></label>
+    <ul>
+        <li>
+            <input id="option1" type="radio" value="100" ng-model="formData.sizeOfNetwork">
+            <label for="option1"> Small network: 100 agents</label>
+            <div class="check"></div>
+        </li>
+        <li>
+            <input id="option2" type="radio" value="500" ng-model="formData.sizeOfNetwork">
+            <label for="option2"> Medium network: 500 agents</label>
+            <div class="check"></div>
+        </li>
+        <li>
+            <input id="option3" type="radio" value="1000" ng-model="formData.sizeOfNetwork">
+            <label for="option3"> Large network: 1000 agents</label>
+            <div class="check"></div>
+        </li>
+        <li>
+            <input id="option4" type="radio" value="10000" ng-model="formData.sizeOfNetwork">
+            <label for="option4"> Extra-large network: 10000 agents</label>
+            <div class="check"></div>
+        </li>
+    </ul>
+</div>
+
+<div class="col-sm-12" ng-show="formData.sizeOfNetwork != null">
+    <br>
+    <br>
+    <img class="col-sm-2" src="assets/cat_profile.png">
+    <code> As desired you will have a network with {{formData.sizeOfNetwork}} agents ...
+              <br>Keep going ...
+        </code>
+    <br>
+    <br>
+</div>
+
+<div class="form-group row" ng-show="formData.sizeOfNetwork != null">
+    <div class="col-xs-6 col-xs-offset-3">
+        <a ui-sref="form.ques-regionOfAgents" class="btn btn-block btn-info">
+        Next Section 
+        <span class="glyphicon glyphicon-circle-arrow-right"></span>
+        </a>
+    </div>
+</div>

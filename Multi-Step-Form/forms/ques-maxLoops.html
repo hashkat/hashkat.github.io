@@ -1,0 +1,31 @@
+<br>
+<label>What is the maximum number of loops/analysis-steps you want your simulation to undertake ?</label>
+<br>
+<label><i>Note: To achieve the most accurate results possible, it is recommended to keep this value at unlimited ;) </i> </label>
+<div class="form-group" ng-app="">
+    <ul>
+        <li>
+            <input id="option1" type="radio" value="1000" ng-model="formData.maxAnalysisSteps">
+            <label for="option1"> 1000 </label>
+            <div class="check"></div>
+        </li>
+        <li>
+            <input id="option2" type="radio" value="10000" ng-model="formData.maxAnalysisSteps">
+            <label for="option2"> 10000 </label>
+            <div class="check"></div>
+        </li>
+        <li>
+            <input id="option3" type="radio" value="unlimited" ng-model="formData.maxAnalysisSteps">
+            <label for="option3"> unlimited</label>
+            <div class="check"></div>
+        </li>
+    </ul>
+</div>
+<div class="form-group row">
+    <div class="col-xs-6 col-xs-offset-3">
+        <a ui-sref="form.lastQues" class="btn btn-block btn-info">
+        Next Section 
+        <span class="glyphicon glyphicon-circle-arrow-right"></span>
+        </a>
+    </div>
+</div>
