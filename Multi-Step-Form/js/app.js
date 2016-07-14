@@ -100,22 +100,22 @@ angular.module('formApp', ['ngAnimate', 'ui.router', 'ngFileSaver'])
 .controller('formController', ['FileSaver', 'Blob', '$scope', function(FileSaver, Blob, $scope) {
 
     // Storing form data in this object
-    $scope.formData =   $scope.formData || {};
-    // {
-    //     "name": "",
-    //     "email": "",
-    //     "maxTime": "",
-    //     "sizeOfNetwork": "",
-    //     "sameAgentRegion": "",
-    //     "sameAgentLanguage": "",
-    //     "agentTastes": "",
-    //     "standardAgent": null,
-    //     "celebrityAgent": null,
-    //     "ideologueAgent": null,
-    //     "humoristAgent": null,
-    //     "companyAgent": null,
-    //     "govtAgent": null
-    // };
+    $scope.formData =   $scope.formData ||
+    {
+        "name": null,
+        "email": null,
+        "maxTime": null,
+        "sizeOfNetwork": null,
+        "botAgents": null,
+        "celebrityAgents": null,
+        "companyAgents": null,
+        "govtAgents": null,
+        "humorousAgents": null,
+        "sameAgentLanguage": null,
+        "politicalAgents": null,
+        "sameAgentRegion": null,
+        "agentTastes": null
+    };
 
     // Function to process the form
     $scope.processForm = function() {

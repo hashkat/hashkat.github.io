@@ -7,19 +7,58 @@
                 <!-- the links to our nested states using relative paths -->
                 <!-- add the active class if the state matches our ui-sref -->
                 <div id="status-buttons" class="text-center">
-                    <a ui-sref-active="active" ui-sref=".profile"><span>1</span>Profile</a>
-                    <a ui-sref-active="active"><span>2</span>Maximum Time</a>
-                    <a ui-sref-active="active"><span>3</span>Size of Network</a>
-                    <a ui-sref-active="active"><span>4</span>Region of Agents</a>
-                    <a ui-sref-active="active"><span>5</span>Language of Agents</a>             
-                    <a ui-sref-active="active"><span>6</span>Tastes of Agents</a>
-                    <a ui-sref-active="active"><span>7</span>Celebrity Agents</a>
-                    <a ui-sref-active="active"><span>8</span>Company Agents</a>
-                    <a ui-sref-active="active"><span>9</span>Political Agents</a>
-                    <a ui-sref-active="active"><span>10</span>Humorous Agents</a>
-                    <a ui-sref-active="active"><span>11</span>Government Agents</a>
-                    <a ui-sref-active="active"><span>12</span>Bot Agents</a>
-                    <a ui-sref-active="active" ui-sref=".lastQues"><span>13</span>Submit</a>
+                    <a ui-sref-active="active" ui-sref=".profile">
+                        <span class="valid">1</span>Profile
+                    </a>
+                    <a ui-sref-active="active">
+                        <span ng-class="{
+'invalid': formData.maxTime == null, 'valid': formData.maxTime != null}">2</span>Maximum Time
+                    </a>
+                    <a ui-sref-active="active">
+                        <span ng-class="{
+'invalid': formData.sizeOfNetwork == null, 'valid': formData.sizeOfNetwork != null}">3
+</span>Size of Network
+                    </a>
+                    <a ui-sref-active="active">
+                        <span ng-class="{
+'invalid': formData.sameAgentRegion == null, 'valid': formData.sameAgentRegion != null}">4</span>Region of Agents
+                    </a>
+                    <a ui-sref-active="active">
+                        <span ng-class="{
+'invalid': formData.sameAgentLanguage == null, 'valid': formData.sameAgentLanguage != null}">5</span>Language of Agents
+                    </a>
+                    <a ui-sref-active="active">
+                        <span ng-class="{
+'invalid': formData.agentTastes == null, 'valid': formData.agentTastes != null}">6</span>Tastes of Agents
+                    </a>
+                    <a ui-sref-active="active">
+                        <span ng-class="{
+'invalid': formData.celebrityAgents == null, 'valid': formData.celebrityAgents != null}">7</span>Celebrity Agents
+                    </a>
+                    <a ui-sref-active="active">
+                        <span ng-class="{
+'invalid': formData.companyAgents == null, 'valid': formData.companyAgents != null}">8</span>Company Agents
+                    </a>
+                    <a ui-sref-active="active">
+                        <span ng-class="{
+'invalid': formData.politicalAgents == null, 'valid': formData.politicalAgents != null}">9</span>Political Agents
+                    </a>
+                    <a ui-sref-active="active">
+                        <span ng-class="{
+'invalid': formData.humorousAgents == null, 'valid': formData.humorousAgents != null}">10</span>Humorous Agents
+                    </a>
+                    <a ui-sref-active="active">
+                        <span ng-class="{
+'invalid': formData.govtAgents == null, 'valid': formData.govtAgents != null}">11</span>Government Agents
+                    </a>
+                    <a ui-sref-active="active">
+                        <span ng-class="{
+'invalid': formData.botAgents == null, 'valid': formData.botAgents != null}">12</span>Bot Agents
+                    </a>
+                    <a ui-sref-active="active">
+                        <span ng-class="{
+'invalid': formData.name == null && formData.email == null && formData.maxTime == null && formData.sizeOfNetwork == null && formData.botAgents == null && formData.celebrityAgents == null && formData.companyAgents == null && formData.govtAgents == null && formData.humorousAgents == null && formData.sameAgentLanguage == null && formData.politicalAgents == null && formData.sameAgentRegion == null && formData.agentTastes == null, 'valid': formData.name != null && formData.email != null && formData.maxTime != null && formData.sizeOfNetwork != null && formData.botAgents != null && formData.celebrityAgents != null && formData.companyAgents != null && formData.govtAgents != null && formData.humorousAgents != null && formData.sameAgentLanguage != null && formData.politicalAgents != null && formData.sameAgentRegion != null && formData.agentTastes != null}">13</span>Submit
+                    </a>
                 </div>
             </div>
             <!-- use ng-submit to catch the form submission and use our Angular function -->
@@ -29,7 +68,7 @@
             </form>
         </div>
         <!-- show our formData as it is being typed -->
-       <!--  <pre>
+        <!--  <pre>
             {{ formData }}
         </pre> -->
     </div>

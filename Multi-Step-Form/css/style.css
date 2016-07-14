@@ -58,15 +58,14 @@ label {
     text-transform: uppercase;
 }
 
-#status-buttons a:hover {
-    text-decoration: none;
+#status-buttons a:hover span{
+    background: #5C6BC0;
 }
 
 
 /* Circled number */
 
 #status-buttons span {
-    background: #080808;
     display: block;
     height: 30px;
     margin: 0 auto 10px;
@@ -75,12 +74,21 @@ label {
     border-radius: 50%;
 }
 
+.invalid{
+    background: #EF5350;
+}
+
+.valid{
+    background: #66BB6A;
+}
+
 
 /* active buttons turn light green-blue*/
 
 #status-buttons a.active span {
-    background: #00BC8C;
+    /*background: #00BC8C;*/
 }
+
 
 
 /* Styling Radio Buttons */
