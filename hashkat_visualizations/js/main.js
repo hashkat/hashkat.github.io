@@ -27,7 +27,7 @@ if (!Detector.webgl) {
 
     var time = 0;
     for (var i = 0; i < options.length; i++) {
-        time = time + 8000;
+        time = time + 2000;
         window.setTimeout(settime(globe, i), time);
     }
 
@@ -41,7 +41,7 @@ if (!Detector.webgl) {
 
 
     xhr = new XMLHttpRequest();
-    xhr.open('GET', './json/newtest.json', true);
+    xhr.open('GET', './json/test.json', true);
     xhr.onreadystatechange = function(e) {
         if (xhr.readyState === 4) {
             if (xhr.status === 200) {
