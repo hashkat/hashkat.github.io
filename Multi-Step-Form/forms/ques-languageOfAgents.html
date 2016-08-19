@@ -26,8 +26,19 @@
     <br>
 </div>
 
+<div class="col-sm-12" ng-show="formData.sameAgentLanguage != null">
+    <br>
+    <br>
+    <img ng-show="formData.sameAgentLanguage == 'Yes'" class="col-sm-12" src="assets/dashboard/language1.jpg">
+    <img ng-show="formData.sameAgentLanguage == 'No'" class="col-sm-12" src="assets/dashboard/language2.jpg">
+    <br>
+    <br>
+</div>
+
 <div class="form-group row" ng-show="formData.sameAgentLanguage != null">
     <div class="col-xs-6 col-xs-offset-3">
+    <br>
+    <br>
         <a ui-sref="form.ques-agentTastes" class="btn btn-block btn-info">
         Next Section 
         <span class="glyphicon glyphicon-circle-arrow-right"></span>
