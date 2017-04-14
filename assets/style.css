@@ -63,11 +63,12 @@ p {
 }
 
 .btn {
-    border: 2px solid #0099cc;
+    border: 1px solid #0099cc;
+    height: 50px;
+    width: 120px;
     border-radius: 0;
-    padding: 1em 1em;
+    padding: 1em 1em 1em 1em;
     background: rgba(0, 0, 0, 0.5);
-    text-transform: uppercase;
     font-family: Josefin Sans, Arial, Helvetica;
 }
 
@@ -157,8 +158,8 @@ p {
     line-height: 3.6em;
     font-family: Josefin Sans, Arial, Helvetica;
     margin: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
     padding-top: 1px;
     padding-bottom: 1px;
 }
